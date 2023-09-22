@@ -1,7 +1,6 @@
 # WEBPACK
 
-ссылка на youtube
-https://youtu.be/o8KMucDpSno
+Исползовал Webpack, Redux-toolkit, Redux-persist, Typescript, sass - для демонстрации навыков
 
 Для установки пакетов используйте команду npm install
 
