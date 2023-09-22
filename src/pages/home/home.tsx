@@ -1,11 +1,10 @@
 import React from 'react';
+import {Comments, Items} from "../../components";
 
 import styles from "./home.module.scss";
-import {Comments, Items} from "../../components";
 
 
 const Home = () => {
-
 
     return (
         <>

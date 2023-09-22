@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
 import cn from "classnames";
-import styles from "./items.module.scss";
 import {removeItem, removeActive, addActive} from "../../store/itemsSlice";
 import { useAppDispatch } from "../../hook";
+
+import styles from "./items.module.scss";
 
 interface IItem{
     id: string;

@@ -1,7 +1,8 @@
 import React, {FC} from 'react';
-import styles from "./comments.module.scss";
 import {addComment} from "../../store/itemsSlice";
 import {useAppDispatch} from "../../hook";
+
+import styles from "./comments.module.scss";
 
 interface ICommentForm {
     color: string;
@@ -12,11 +13,9 @@ interface ICommentForm {
 }
 
 const CommentForm: FC<ICommentForm> = ({color, setColor, description, setDescription, id}) => {
-    console.log(description)
     const dispatch = useAppDispatch();
     const handleAction = () => {
         if (description.trim().length) {
-            console.log({color, text: description, id})
             dispatch(addComment({color, text: description, id}));
             setDescription('')
             setColor("#1b1b1b")

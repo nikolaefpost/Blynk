@@ -5,7 +5,7 @@
   width: 450px;
   padding: 20px 10px;
   background: $items_bg;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.5);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.5);
 
   & h2{
     @include fonts(400, 32px, 32px, $accent);
@@ -39,16 +39,22 @@
       @include fonts(400, 16px, 16px, $accent);
       //@include display-flex;
       box-sizing: border-box;
-      padding: 0 10px;
+      padding: 6px 10px;
+
+      &::placeholder{
+
+      }
     }
   }
 
   & .comments{
-    margin-top: 20px;
+    margin: 16px 0;
 
     & .comment{
       @include display-flex;
       height: 50px;
+      margin-bottom: 6px;
+
 
       & div:first-child{
         width: 50px;
@@ -60,6 +66,8 @@
         @include fonts(400, 16px, 16px, $accent);
         height: 100%;
         background: $white;
+        padding: 6px 10px;
+        box-sizing: border-box;
       }
     }
   }

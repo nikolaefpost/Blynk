@@ -1,14 +1,11 @@
 import React, {useState} from 'react';
-import cn from "classnames";
-import styles from "./items.module.scss";
 import Item from "./Item";
 import {useAppDispatch, useAppSelector} from "../../hook"
 import ItemForm from "./ItemForm";
 import { addItem, removeActive} from "../../store/itemsSlice";
 
-// const items = [
-//     {id: "1", active: true, name: "Test"}
-// ]
+import styles from "./items.module.scss";
+
 
 const Items = () => {
     const [text, setText] = useState('')

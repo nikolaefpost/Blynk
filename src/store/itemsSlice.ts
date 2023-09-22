@@ -1,5 +1,4 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import item from "../components/items/Item";
 
 type Item = {
     id: string;
@@ -23,7 +22,6 @@ type CommentPayload = {
     color: string;
 }
 
-const storage = window.localStorage;
 
 const initialState: ItemsState = {
     list: [{id: "1", active: true, name: "Test", comments: []}]
