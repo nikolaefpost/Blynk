@@ -26,7 +26,7 @@ const Item: FC<IItem> = ({id, active, name, comments }) => {
     return (
         <div key={id} className={cn(styles.item, {[styles.active]: active})} onClick={handleActive}>
             <div className={styles.name}>{name}</div>
-            <span className={styles.count}>{comments?.length}</span>
+            {comments?.length > 0 && <span className={styles.count}>{comments?.length}</span>}
             <button
                 className={styles.delete}
                 onClick={()=> dispatch(removeItem(id))}

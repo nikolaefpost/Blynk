@@ -35,6 +35,10 @@
       border: none;
       cursor: pointer;
       border-radius: 4px;
+
+      &:hover{
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.5);
+      }
     }
   }
 
@@ -69,6 +73,11 @@
         border: 1px solid $hot_pink;
         border-radius: 4px;
         height: 36px;
+        cursor: pointer;
+
+        &:hover{
+          box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.5);
+        }
       }
     }
 

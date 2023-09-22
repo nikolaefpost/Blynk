@@ -25,6 +25,10 @@
       height: 100%;
       border: 1px solid $accent;
       border-radius: 4px;
+
+      &:hover{
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.5);
+      }
     }
 
     & .add{
@@ -35,6 +39,11 @@
       border-radius: 4px;
       height: 100%;
       @include display-flex;
+      cursor: pointer;
+
+      &:hover{
+        box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.5);
+      }
     }
 
     & .desc{
