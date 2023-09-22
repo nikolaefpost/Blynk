@@ -5,6 +5,7 @@ import CommentElement from "./Comment";
 
 import styles from "./comments.module.scss";
 
+
 const Comments = () => {
     const [color, setColor] = useState("#1b1b1b");
     const [description, setDescription] = useState("");
