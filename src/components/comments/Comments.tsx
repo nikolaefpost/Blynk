@@ -13,7 +13,8 @@ const Comments = () => {
 
     return (
         <div className={styles.comments_block}>
-            <h2>Comment #</h2>
+            <h2>Comment</h2>
+            <p># {activeItem? activeItem.id: ""}</p>
             {activeItem && activeItem.comments && <div className={styles.comments}>
                 {activeItem.comments.map(com => (
                     <CommentElement key={com.description} description={com.description} color={com.color}/>

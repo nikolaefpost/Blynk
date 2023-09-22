@@ -11,6 +11,10 @@
     @include fonts(400, 32px, 32px, $accent);
   }
 
+  & p{
+    margin-top: -16px;
+  }
+
   & form{
     @include display-flex;
     gap: 10px;
