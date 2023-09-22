@@ -1,0 +1,10 @@
+@import "../../style/mixins";
+@import "../../style/colors";
+
+.home{
+ padding: 40px 20px;
+ height: 100VH;
+ box-sizing: border-box;
+ @include display-flex(center, flex-start);
+ gap: 100px;
+}

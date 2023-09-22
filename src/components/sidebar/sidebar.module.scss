@@ -1,0 +1,23 @@
+@import "../../style/mixins";
+@import "../../style/colors";
+
+.sidebar{
+  padding: 20px 40px;
+  user-select: none;
+  height: 100VH;
+  position: absolute;
+  width: 300px;
+  background: $aside_bg;
+  box-sizing: border-box;
+
+  & h2{
+    @include fonts(400, 32px, 32px, $white);
+  }
+
+  & p{
+    margin-top: 50px;
+    @include fonts(400, 18px, 18px, $white);
+  }
+
+
+}
